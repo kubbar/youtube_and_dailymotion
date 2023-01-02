@@ -40,7 +40,7 @@ jobs:
         run: |
           pwd
           chmod +x NET25TV.sh
-          ./autorun.sh
+          ./NET25TV.sh
         
       - name: git add
         run: |
