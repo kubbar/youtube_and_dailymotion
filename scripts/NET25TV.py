@@ -1,25 +1,6 @@
 #! /usr/bin/python3
 
 banner = r'''
-###########################################################################
-#      ____ 	____    _____                                             #
-#     |  _ \   |       |  _   \                                           #
-#     | |_) |  |____   | |_|  |                                           #
-#     |  __/        |  |  _   /                                           #
-#     |_|       ____|  |_| |__\                                           #
-#                                                                         #
-#                                  >> https://github.com/naveenland4      #
-###########################################################################
-
-
-
-#EXTINF:-1 group-title="Info - Must Read" tvg-logo="https://i.imgur.com/aESqPMs.png" tvg-id="", Playlist is for Free
-https://raw.githubusercontent.com/naveenland4/UTLive/main/assets/info.m3u8
-
-#EXTINF:-1 group-title="French" tvg-logo="https://i.imgur.com/C8DXbt1.png" tvg-id="", BFM Grand Lille (720p)
-https://live.creacast.com/grandlilletv/smil:grandlilletv.smil/playlist.m3u8
-'''
-
 import requests
 import os
 import sys
@@ -54,7 +35,7 @@ def grab(url):
             tuner += 5
     print(f"{link[start : end]}")
 
-print('#EXTM3U x-tvg-url="https://github.com/botallen/epg/releases/download/latest/epg.xml.gz"')
+print('#EXTM3U x-tvg-url=""')
 print(banner)
 s = requests.Session()
 with open('../NET25TV_info.txt') as f:
