@@ -2,10 +2,14 @@
 
 name: NET25TV
 
-# Controls when the workflow will run
+# Controls when the action will run. 
 on:
   schedule:
-    - cron: '0 4,16 * * *'
+    - cron: '0 0/2 * * *'
+    
+  pull_request:
+    branches:
+      - main
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,21 +26,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # 
+      # Runs a single command using the runners shell
+      #- name: Run a one-line script
+      #  run: echo testing!
+
+      # Runs a set of commands using the runners shell 
       - name: config
         run: |
-          git config --global user.email "@gmail.com"
-          git config --global user.name "kubbar"
-      
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
       
       - name: Main
         run: |
           pwd
           chmod +x NET25TV.sh
-          ./NET25TV.sh
-          #cd scripts
-          #python3 NET25TV.py > ../NET25TV.m3u8
-          echo "m3u grabbed"
+          ./autorun.sh
         
       - name: git add
         run: |
