@@ -37,8 +37,7 @@ def grab(url):
             tuner += 5
     print(f"{link[start : end]}")
 
-print('#EXTM3U x-tvg-url=""')
-print(banner)
+print('#EXTM3U')
 s = requests.Session()
 with open('../NET25TV_info.txt') as f:
     for line in f:
