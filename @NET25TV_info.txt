@@ -2,4 +2,4 @@
 ~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
 
 @NET25TV | | |
-https://www.youtube.com/@NET25TV/live
+https://www.dailymotion.com/video/x5cr6b9
