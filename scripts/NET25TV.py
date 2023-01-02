@@ -37,7 +37,8 @@ def grab(url):
             tuner += 5
     print(f"{link[start : end]}")
 
-
+print('#EXTM3U')
+print('#EXT-X-VERSION:3')
 s = requests.Session()
 with open('../NET25TV_info.txt') as f:
     for line in f:
