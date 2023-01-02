@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: @NET25TV
+name: NET25TV
 
 # Controls when the workflow will run
 on:
@@ -32,10 +32,10 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x @NET25TV.sh
-          ./@NET25TV.sh
+          chmod +x NET25TV.sh
+          ./NET25TV.sh
           #cd scripts
-          #python3 @NET25TV.py > ../@NET25TV.m3u8
+          #python3 NET25TV.py > ../NET25TV.m3u8
           echo "m3u grabbed"
         
       - name: git add
