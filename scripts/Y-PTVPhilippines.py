@@ -31,15 +31,14 @@ def grab(url):
         if 'https://' in response[end-tuner : end]:
             link = response[end-tuner : end]
             start = link.find('https://')
-            end = link.find('.m3u8') + 5
+            end = link.find('') + 5
             break
         else:
             tuner += 5
     print(f"{link[start : end]}")
 
-print('#EXTM3U')
-print('#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="chunked",NAME="1080p (source)",AUTOSELECT=YES,DEFAULT=YES')
-print('#EXT-X-STREAM-INF:BANDWIDTH=3978838,RESOLUTION=1920x1080,CODECS="avc1.4D0428,mp4a.40.2",VIDEO="chunked",FRAME-RATE=30.000')
+#print('#EXTM3U')
+#print('#EXT-X-INDEPENDENT-SEGMENTS')
 s = requests.Session()
 with open('../Y-PTVPhilippines_info.txt') as f:
     for line in f:
