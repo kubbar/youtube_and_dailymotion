@@ -31,14 +31,14 @@ def grab(url):
         if 'https://' in response[end-tuner : end]:
             link = response[end-tuner : end]
             start = link.find('https://')
-            end = link.find('') + 5
+            end = link.find('.m3u8') + 5
             break
         else:
             tuner += 5
     print(f"{link[start : end]}")
 
-#print('#EXTM3U')
-#print('#EXT-X-INDEPENDENT-SEGMENTS')
+print('#EXTM3U')
+print('#EXT-X-INDEPENDENT-SEGMENTS')
 s = requests.Session()
 with open('../Y-PTVPhilippines_info.txt') as f:
     for line in f:
