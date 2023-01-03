@@ -32,7 +32,7 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x D.PTVPhilippines.sh
+          chmod +x D-PTVPhilippines.sh
           ./D-PTVPhilippines.sh
           #cd scripts
           #python3 D-PTVPhilippines.py > ../PTVPhilippines.m3u8
