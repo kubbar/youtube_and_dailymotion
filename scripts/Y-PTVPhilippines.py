@@ -41,7 +41,7 @@ print('#EXTM3U')
 print('#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="chunked",NAME="1080p (source)",AUTOSELECT=YES,DEFAULT=YES')
 print('#EXT-X-STREAM-INF:BANDWIDTH=3978838,RESOLUTION=1920x1080,CODECS="avc1.4D0428,mp4a.40.2",VIDEO="chunked",FRAME-RATE=30.000')
 s = requests.Session()
-with open('../NET25TV_info.txt') as f:
+with open('../Y-PTVPhilippines_info.txt') as f:
     for line in f:
         line = line.strip()
         if not line or line.startswith('~~'):
