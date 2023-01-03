@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: NET25TV
+name: Y-PTVPhilippines
 
 # Controls when the action will run. 
 on:
@@ -39,8 +39,8 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x NET25TV.sh
-          ./NET25TV.sh
+          chmod +x Y-PTVPhilippines.sh
+          ./Y-PTVPhilippines.sh
         
       - name: git add
         run: |
