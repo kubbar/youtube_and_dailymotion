@@ -1,0 +1,3 @@
+#EXTM3U
+#EXT-X-INDEPENDENT-SEGMENTS
+https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1672743444/ei/tLWzY5DkCMe-lu8PwP2xiAg/ip/70.37.167.32/id/hqUqtn7HlQg.1/source/yt_live_broadcast/requiressl/yes/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/vprv/1/go/1/pacing/0/nvgoi/1/keepalive/yes/fexp/24001373%2C24007246/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cvprv%2Cgo%2Citag%2Cplaylist_type/sig/AOq0QJ8wRQIgDv3iD72JYF7f-E9_ZgpOFPSwmJ-0c1e3AsbHRd-uM-wCIQCN06Z9iB4ojAjUR4pB8FpGoHLdyVTiLJJXmrjRgLO4uw%3D%3D/file/index.m3u8
