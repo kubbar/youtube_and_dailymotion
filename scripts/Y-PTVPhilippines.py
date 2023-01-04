@@ -37,12 +37,11 @@ def grab(url):
             tuner += 5
     print(f"{link[start : end]}")
 
-variant_m3u8 = m3u8.loads('#EXTM3U8 ... contains a variant stream ...')
-variant_m3u8.is_variant    # in this case will be True
+variant_m3u8 = m3u8.loads('#EXTM3U ... contains a variant stream ...')
 
-for playlist in variant_m3u8.playlists:
-    playlist.uri
-    playlist.stream_info.bandwidth
+for iframe_playlist in variant_m3u8.iframe_playlists:
+    iframe_playlist.uri
+    iframe_playlist.iframe_stream_info.bandwidth
     
 print('#EXTM3U')
 print('#EXT-X-INDEPENDENT-SEGMENTS')
