@@ -38,8 +38,8 @@ def grab(url):
     print(f"{link[start : end]}")
 
 print('#EXTM3U')
-print('#EXT-X-INDEPENDENT-SEGMENTS')
-print('##EXT-X-STREAM-INF:PROGRAM-ID=1')
+print('#EXT-X-VERSION:3')
+print('#EXT-X-STREAM-INF:PROGRAM-ID=1')
 s = requests.Session()
 with open('../Y-PTVPhilippines_info.txt') as f:
     for line in f:
