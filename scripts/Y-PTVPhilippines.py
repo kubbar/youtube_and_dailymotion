@@ -29,7 +29,7 @@ def grab(url):
             end = link.find('.m3u8') + 5
             break
         else:
-            tuner += 10
+            tuner += 5
     streams = s.get(link[start:end]).text.split('#EXT')
     hd = streams[-1].strip()
     st = hd.find('http')
