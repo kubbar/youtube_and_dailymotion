@@ -1,7 +1,5 @@
 #! /usr/bin/python3
 
-banner = r'''
-'''
 
 import requests
 import os
@@ -14,17 +12,14 @@ if 'win' in sys.platform:
 def grab(url):
     response = s.get(url, timeout=15).text
     if '.m3u8' not in response:
-        response = requests.get(url).text
+        if windows:
+            print('https://raw.githubusercontent.com/kubbar/youtube_and_dailymotion/main/notwork/notwork.m3u8')
+            return
+        os.system(f'wget {url} -O temp.txt')
+        response = ''.join(open('temp.txt').readlines())
         if '.m3u8' not in response:
-            if windows:
-                print('https://raw.githubusercontent.com/kubbar/youtube_and_dailymotion/main/notwork/notwork.m3u8')
-                return
-            #os.system(f'wget {url} -O temp.txt')
-            os.system(f'curl "{url}" > temp.txt')
-            response = ''.join(open('temp.txt').readlines())
-            if '.m3u8' not in response:
-                print('https://raw.githubusercontent.com/kubbar/youtube_and_dailymotion/main/notwork/notwork.m3u8')
-                return
+            print('https://raw.githubusercontent.com/kubbar/youtube_and_dailymotion/main/notwork/notwork.m3u8')
+            return
     end = response.find('.m3u8') + 5
     tuner = 100
     while True:
@@ -35,11 +30,15 @@ def grab(url):
             break
         else:
             tuner += 5
-    print(f"{link[start : end]}")
+    streams = s.get(link[start:end]).text.split('#EXT')
+    hd = streams[-1].strip()
+    st = hd.find('http')
+    print(hd[st:].strip())
+    #print(f"{link[start : end]}")
 
 print('#EXTM3U')
-print('#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="chunked",NAME="1080p (source)",AUTOSELECT=YES,DEFAULT=YES')
-print('#EXT-X-STREAM-INF:BANDWIDTH=5420722,RESOLUTION=1920x1080,CODECS="avc1.640028,mp4a.40.2",VIDEO="chunked",FRAME-RATE=30.000')
+print('#EXT-X-VERSION:3')
+print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
 s = requests.Session()
 with open('../Y-PTVPhilippines_info.txt') as f:
     for line in f:
