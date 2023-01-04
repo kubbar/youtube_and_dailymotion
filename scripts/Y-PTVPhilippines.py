@@ -20,8 +20,8 @@ def grab(url):
                 print('https://raw.githubusercontent.com/kubbar/youtube_and_dailymotion/main/notwork/notwork.m3u8')
                 return
             #os.system(f'wget {url} -O temp.txt')
-            os.system(f'curl "{url}" > Y-PTVPhilippines_info.txt')
-            response = ''.join(open('Y-PTVPhilippines_info.txt').readlines())
+            os.system(f'curl "{url}" > temp.txt')
+            response = ''.join(open('temp.txt').readlines())
             if '.m3u8' not in response:
                 print('https://raw.githubusercontent.com/kubbar/youtube_and_dailymotion/main/notwork/notwork.m3u8')
                 return
@@ -37,7 +37,9 @@ def grab(url):
             tuner += 5
     print(f"{link[start : end]}")
 
-
+print('#EXTM3U')
+print('#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="chunked",NAME="1080p (source)",AUTOSELECT=YES,DEFAULT=YES')
+print('#EXT-X-STREAM-INF:BANDWIDTH=5420722,RESOLUTION=1920x1080,CODECS="avc1.640028,mp4a.40.2",VIDEO="chunked",FRAME-RATE=30.000')
 s = requests.Session()
 with open('../Y-PTVPhilippines_info.txt') as f:
     for line in f:
