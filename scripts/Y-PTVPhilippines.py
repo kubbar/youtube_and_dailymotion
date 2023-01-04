@@ -25,7 +25,7 @@ def grab(url):
             if '.m3u8' not in response:
                 print('https://raw.githubusercontent.com/kubbar/youtube_and_dailymotion/main/notwork/notwork.m3u8')
                 return
-    end = response.find('') + 5
+    end = response.find('.txt') + 5
     tuner = 100
     while True:
         if 'https://' in response[end-tuner : end]:
