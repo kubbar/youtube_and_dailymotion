@@ -37,7 +37,7 @@ def grab(line):
 
 print('#EXTM3U')
 print('#EXT-X-VERSION:3')
-print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
+print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=7680000')
 s = requests.Session()
 with open('../D-PTVPhilippines_info.txt') as f:
     for line in f:
