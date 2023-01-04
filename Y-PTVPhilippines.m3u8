@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="chunked",NAME="1080p (source)",AUTOSELECT=YES,DEFAULT=YES
+#EXT-X-STREAM-INF:BANDWIDTH=3978838,RESOLUTION=1920x1080,CODECS="avc1.4D0428,mp4a.40.2",VIDEO="chunked",FRAME-RATE=30.000
+https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1672831011/ei/wgu1Y43BOdDukgbaoq3ICw/ip/13.87.244.129/id/hqUqtn7HlQg.1/source/yt_live_broadcast/requiressl/yes/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/vprv/1/go/1/pacing/0/nvgoi/1/keepalive/yes/fexp/24007246/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cvprv%2Cgo%2Citag%2Cplaylist_type/sig/AOq0QJ8wRgIhAOtfBMO-eVOPflKQcaETDcCSaZQ5lKX1s7XWSIIXPuLmAiEA3BzOj6LTtE5_XqWF46l08AKrtSI9-t75MyX2f-xY6_8%3D/file/index.m3u8
