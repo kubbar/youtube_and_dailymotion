@@ -36,8 +36,8 @@ def grab(line):
         print(m3u)
 
 print('#EXTM3U')
-print('#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="chunked",NAME="1080p (source)",AUTOSELECT=YES,DEFAULT=YES')
-print('#EXT-X-STREAM-INF:BANDWIDTH=3978838,RESOLUTION=1920x1080,CODECS="avc1.4D0428,mp4a.40.2",VIDEO="chunked",FRAME-RATE=30.000')
+print('#EXT-X-VERSION:3')
+print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
 s = requests.Session()
 with open('../D-PTVPhilippines_info.txt') as f:
     for line in f:
