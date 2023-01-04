@@ -31,14 +31,14 @@ def grab(url):
         else:
             tuner += 5
     streams = s.get(link[start:end]).text.split('#EXT')
-    fhd = streams[-1].strip()
-    st = fhd.find('http')
-    print(fhd[st:].strip())
+    hd = streams[-2].strip()
+    st = hd.find('http')
+    print(hd[st:].strip())
     #print(f"{link[start : end]}")
 
 print('#EXTM3U')
 print('#EXT-X-VERSION:3')
-print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
+print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5420722')
 s = requests.Session()
 with open('../Y-PTVPhilippines_info.txt') as f:
     for line in f:
