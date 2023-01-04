@@ -62,15 +62,11 @@ with open('../Y-PTVPhilippines_info.txt') as f:
             tvg_id = line[3].strip()
         else:
             grab(line)
-            tuner += 5
-    streams = s.get(link[start:end]).text.split('#EXT')
+
     hd = streams[-1].strip()
     st = hd.find('http')
     print(hd[st:].strip())
-    #print(f"{link[start : end]}")
-
 print('#EXTM3U')
-print('#EXT-X-VERSION:3')
 print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5420722')
 s = requests.Session()
 with open('../Y-PTVPhilippines_info.txt') as f:
