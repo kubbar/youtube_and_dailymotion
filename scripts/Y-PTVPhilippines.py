@@ -37,14 +37,7 @@ def grab(url):
             tuner += 5
     print(f"{link[start : end]}")
 
-variant_m3u8 = m3u8.loads('#EXTM3U ... contains a variant stream ...')
-
-for iframe_playlist in variant_m3u8.iframe_playlists:
-    iframe_playlist.uri
-    iframe_playlist.iframe_stream_info.bandwidth
-    
 print('#EXTM3U')
-print('#EXT-X-INDEPENDENT-SEGMENTS')
 print('#EXT-X-STREAM-INF')
 s = requests.Session()
 with open('../Y-PTVPhilippines_info.txt') as f:
