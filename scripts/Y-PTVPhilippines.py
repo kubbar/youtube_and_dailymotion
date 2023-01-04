@@ -37,7 +37,7 @@ def grab(url):
     #print(f"{link[start : end]}")
 
 print('#EXTM3U')
-print('#EXT-X-INDEPENDENT-SEGMENTS
+print('#EXT-X-INDEPENDENT-SEGMENTS')
 print('#EXT-X-STREAM-INF:BANDWIDTH=290288,CODECS="mp4a.40.5,avc1.42c00b",RESOLUTION=256x144,FRAME-RATE=15,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE')
 s = requests.Session()
 with open('../Y-PTVPhilippines_info.txt') as f:
