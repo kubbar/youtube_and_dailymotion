@@ -38,9 +38,9 @@ def grab(url):
 
 print('#EXTM3U')
 print('#EXT-X-VERSION:3')
-print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
+print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5420722')
 s = requests.Session()
-with open('../Y-DZRHNewsTelevision_info.txt') as f:
+with open('../Y-PTVPhilippines_info.txt') as f:
     for line in f:
         line = line.strip()
         if not line or line.startswith('~~'):
