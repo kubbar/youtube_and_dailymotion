@@ -31,7 +31,7 @@ def grab(url):
         else:
             tuner += 5
     streams = s.get(link[start:end]).text.split('#EXT')
-    hd = streams[-2].strip()
+    hd = streams[-3].strip()
     st = hd.find('http')
     print(hd[st:].strip())
     #print(f"{link[start : end]}")
