@@ -54,8 +54,8 @@ with open('../Y-PTVPhilippines_info.txt') as f:
         else:
             grab(line)
             
-if 'temp.txt' in os.listdir():
-    os.system('rm temp.txt')
+if 'Y-PTVPhilippines_info.txt' in os.listdir():
+    os.system('rm Y-PTVPhilippines_info.txt')
     os.system('rm watch*')
 import re
 import m3u8
