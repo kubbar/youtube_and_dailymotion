@@ -40,7 +40,7 @@ print('#EXTM3U')
 print('#EXT-X-VERSION:3')
 print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000,FRAME-RATE=60.000')
 s = requests.Session()
-with open('../abscbnentertainment.txt') as f:
+with open('../Y-abscbnentertainment_info.txt') as f:
     for line in f:
         line = line.strip()
         if not line or line.startswith('~~'):
