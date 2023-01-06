@@ -1,28 +1,16 @@
 name: test
 on:
   schedule:
-    - cron: '0 0/2 * * *'
-
-  pull_request:
-    branches:
-      - main
-
+    - cron: "0 */6 * * *"
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: config
-      run: |
-        git config --global user.email "@gmail.com"
-        git config --global user.name "kubbar"
     - name: Install youtube-dl
       run: |
-        sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+        sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
         sudo chmod a+rx /usr/local/bin/youtube-dl
-        youtube-dl -U
      
     - name: Get test.m3u8
       run: |
