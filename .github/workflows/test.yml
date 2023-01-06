@@ -19,7 +19,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1568726
-        $(youtube-dl -g https://www.youtube.com/@PlayMedia10/live)
+        $(youtube-dl -g https://www.dailymotion.com/video/x5cr6b9)
         EOL
      
     - name: git add
