@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Install youtube-dl
       run: |
-        sudo curl -L https://www.media.gov.kw/LiveTV.aspx?PanChannel=KTV1
+        sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
         sudo chmod a+rx /usr/local/bin/youtube-dl
      
     - name: Get test.m3u8
@@ -19,7 +19,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1568726
-        $(youtube-dl -g https://www.ajmantv.com)
+        $(https://www.media.gov.kw/LiveTV.aspx?PanChannel=KTV1)
         EOL
      
     - name: git add
