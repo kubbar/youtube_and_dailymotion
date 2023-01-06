@@ -1,4 +1,4 @@
-name: test
+name: All in One
 on:
   schedule:
     - cron: "0 */6 * * *"
@@ -27,8 +27,8 @@ jobs:
         git init
         git config --local user.name "kubbar"
         git config --local user.email "@gmail.com"
-        git checkout -b test
+        git checkout -b IPTV
         git add .
-        git commit -m "Update test"
+        git commit -m "Update IPTV"
         git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-        git push -f -u origin test
+        git push -f -u origin IPTV
