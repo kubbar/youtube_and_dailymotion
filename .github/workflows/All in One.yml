@@ -19,7 +19,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1568726
-        $(youtube-dl -g https://playback.dacast.com/content/access?contentId=ce5319bcc9f92fde19cde3c12ad08050-live-13e58c11-e5f8-9dc7-d17a-0486ddf13c71&provider=universe&referrerToken=U2FsdGVkX1+Di2odmFYfGppYkCUP8LX/thCmYWU6Ou199PS7fPSpW9gjcjlr7KpF4veis7YZy5sYg3aZkgGgJq+o1lhUuoLT9b/C+Vi5Rba25CQjhI28gEluTJ+OQGjE/f78zqPUjtSaxJTfeaiJk7zFUqLdHU6fx5IYgHl3U8QX0udOXFismLzfQsHbpNoySeLOA2dCrtYzk+oxDNPiMnz8MIu5OuHL3Z0P7kmzJjkUVj9UMj7KngCohgfrax+PfQHnyRWzlKSWzWP9dpNOUpr1meLeQTpyGnVOqJz0l9Hzf6d6wMzzwXWjcguivNM+ctsROJifQLlQ/IYI3HTddoJflICoi5mswEfvFsvdrKDn3mcA1dNFXR8cwDMh+Q/atlAS7CpspHkcnCFrM6BtRM2q8RxcQpFgTHHhqmSxYeO+gpA2P/os7lZeMNXEwPKo7iUHD7wcREQ3qgeOsO0ugiEwkrYW6TgB2YsTDD1YpQC0pgGqEnJwuw6dTYKR1R0wvL78zodfCJmkAfj+u0YzNfYJuDyaRd7a+Kbc7cU+S09GAlBo8/nqje0BJQUznv6HeDizBIknkCw+6TCb+dFqGE+KF8VnVxgOVjRGyE68sMPDgfQv5OW6vioH6qp0OBz/2sA7IdYMh2auV38KNROzRUAmG3dAU78SjXQm8u8cxcvYfFtg5Uy46AZ+Lgzp45dO9EN9N8C+0A5yqQdTk6Ghf/yowXlKdUXB2jKOOybkwX60Yu5mFvODryLMhCHWZ9PFn9cTpiZOkZpaWP1+myRAQP8yMGDo6J6ihlV8Ux36/ZGkf2ixXvJ+fy9ToCAuXoUsCALJGFsUinJt6RwVOncksK8Fj6WDr3no8ydYhzzuCg90v4vr/2NbCs5laVyIYfMg5IxymkQYxksdkNVX+qUARDMOzDYbfVXfgtqoUBvv0uUkJcdT7LrNu1LFSraxKwIfjLNm9iFq74hfvxDBBcarEWCs6ayHYB/2D83rBwNsnczuvao75Nik6wlg/VPRncRPooGDPiC5G3YopHAS57j8wMEUHB697pkKTDa0BBiylRYcYm63qaNAmIBODPU2dzfO0nIxpqky5sXlSuG82zKInsBzvJ289UKD3pJUq7h67Egr3VUic/yRFt2dBEhKyOkBCirzhhEgeIEKWPOwIHJJZSQ7js8rNYlmhH7ZZ9QlXAFvYyUPnZP3qNpboiyP8/t3koklOu01uEgF57SIYGh1Ky8nzPPo+hj6HoN1cBqsXm8=)
+        $(youtube-dl -g https://www.ajmantv.com)
         EOL
      
     - name: git add
