@@ -15,14 +15,14 @@ jobs:
 
 
 
-    - name: Get test.m3u8
+    - name: Get D-PTVPhilippines.m3u8
       run: |
-        touch ./test.m3u8
-        sudo cat >./test.m3u8 <<EOL
+        touch ./D-PTVPhilippines.m3u8
+        sudo cat >./D-PTVPhilippines.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/@PlayMedia10/live)
+        $(youtube-dl -g https://www.dailymotion.com/video/x5cr6b9)
         EOL
 
 
