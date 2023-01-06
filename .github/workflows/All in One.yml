@@ -11,7 +11,9 @@ jobs:
       run: |
         sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
         sudo chmod a+rx /usr/local/bin/youtube-dl
-     
+        
+###############################################################################################
+
     - name: Get test.m3u8
       run: |
         touch ./test.m3u8
@@ -19,11 +21,14 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1568726
-        $(https://www.media.gov.kw/LiveTV.aspx?PanChannel=KTV1)
+        $(https://www.youtube.com/@PlayMedia10/live)
         EOL
      
     - name: git add
       run: |
+
+###############################################################################################
+
         git init
         git config --local user.name "kubbar"
         git config --local user.email "@gmail.com"
