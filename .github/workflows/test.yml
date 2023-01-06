@@ -19,16 +19,16 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1568726
-        $(youtube-dl -g https://www.youtube.com/abscbnentertainment/live)
+        $(youtube-dl -g https://www.youtube.com/@PlayMedia10/live)
         EOL
      
     - name: git add
       run: |
         git init
-        git config --local user.name "actions"
-        git config --local user.email "action@github.com"
-        git checkout -b ytblive
+        git config --local user.name "kubbar"
+        git config --local user.email "@gmail.com"
+        git checkout -b test
         git add .
-        git commit -m "Update ytblive"
+        git commit -m "Update test"
         git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
         git push -f -u origin ytblive
