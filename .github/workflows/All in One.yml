@@ -19,9 +19,8 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
-        $(yt-dlp -g -f 720p https://www.youtube.com/@BeeMovies/live)
+        $(yt-dlp -g -f 95 https://www.youtube.com/@BeeMovies/live)
         EOL
-
 
 
         git init
