@@ -24,7 +24,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
-        $(yt-dlp -g --youtube-print-sig-code https://www.youtube.com/embed/live_stream?channel=UCstEtN0pgOmCf02EdXsGChw)
+        $(yt-dlp -g --allow-unplayable-formats https://www.youtube.com/embed/live_stream?channel=UCstEtN0pgOmCf02EdXsGChw)
         EOL
 
 
