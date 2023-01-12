@@ -24,7 +24,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
-        $(yt-dlp -g Use internal field formatting like %(autonumber+NUMBER)s https://www.youtube.com/c/abscbnentertainment/live)
+        $(yt-dlp -g --id https://www.youtube.com/c/abscbnentertainment/live)
         EOL
 
 
