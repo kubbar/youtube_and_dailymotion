@@ -17,6 +17,76 @@ jobs:
 
 
 
+    - name: Get D-PTVPhilippines.m3u8
+      run: |
+        touch ./D-PTVPhilippines.m3u8
+        sudo cat >./D-PTVPhilippines.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.dailymotion.com/video/x5cr6b9)
+        EOL
+
+    - name: Get Y-DZRHNewsTelevision.m3u8
+      run: |
+        touch ./Y-DZRHNewsTelevision.m3u8
+        sudo cat >./Y-DZRHNewsTelevision.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/@DZRHNewsTelevision/live)
+        EOL
+
+    - name: Get Y-NET25TV.m3u8
+      run: |
+        touch ./Y-NET25TV.m3u8
+        sudo cat >./Y-NET25TV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/@NET25TV/live)
+        EOL
+
+    - name: Get Y-PTVPhilippines.m3u8
+      run: |
+        touch ./Y-PTVPhilippines.m3u8
+        sudo cat >./Y-PTVPhilippines.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/@PTVPhilippines/live)
+        EOL
+
+    - name: Get Y-TeleRadyo.m3u8
+      run: |
+        touch ./Y-TeleRadyo.m3u8
+        sudo cat >./Y-TeleRadyo.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/@TeleRadyo/live)
+        EOL
+
+    - name: Get Y-TeleRadyo.m3u8
+      run: |
+        touch ./Y-abscbnnews.m3u8
+        sudo cat >./Y-abscbnnews.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/@abscbnnews/live)
+        EOL
+
+    - name: Get Y-UNTVNewsandRescue.m3u8
+      run: |
+        touch ./Y-UNTVNewsandRescue.m3u8
+        sudo cat >./Y-UNTVNewsandRescue.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(youtube-dl -g https://www.youtube.com/@UNTVNewsandRescue/live)
+        EOL
+
     - name: Get Y-abscbnentertainment.m3u8
       run: |
         touch ./Y-abscbnentertainment.m3u8
