@@ -17,10 +17,10 @@ jobs:
 
 
 
-    - name: Get Y-abscbnentertainment.m3u8
+    - name: Get Y-abscbnentertainment.m3u
       run: |
-        touch ./Y-abscbnentertainment.m3u8
-        sudo cat >./Y-abscbnentertainment.m3u8 <<EOL
+        touch ./Y-abscbnentertainment.m3u
+        sudo cat >./Y-abscbnentertainment.m3u <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
