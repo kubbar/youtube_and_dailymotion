@@ -22,8 +22,7 @@ jobs:
         touch ./Y-abscbnentertainment.m3u
         sudo cat >./Y-abscbnentertainment.m3u <<EOL
         #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5400000
+        #EXTINF:-1
         $(yt-dlp -g https://github.com/kubbar/youtube_and_dailymotion/raw/main/Y-abscbnentertainment.m3u8)
         EOL
 
