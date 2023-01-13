@@ -24,7 +24,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --write-url-link https://www.youtube.com/channel/UCstEtN0pgOmCf02EdXsGChw/live)
+        $(yt-dlp -g --newline https://www.youtube.com/channel/UCstEtN0pgOmCf02EdXsGChw/live)
         EOL
 
 
