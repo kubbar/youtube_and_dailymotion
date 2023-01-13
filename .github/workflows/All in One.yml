@@ -24,7 +24,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.dailymotion.com/video/x5cr6b9)
+        $(yt-dlp -g https://www.dailymotion.com/video/x5cr6b9)
         EOL
 
     - name: Get Y-DZRHNewsTelevision.m3u8
@@ -34,7 +34,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/@DZRHNewsTelevision/live)
+        $(yt-dlp -g https://www.youtube.com/@DZRHNewsTelevision/live)
         EOL
 
     - name: Get Y-NET25TV.m3u8
@@ -44,7 +44,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/@NET25TV/live)
+        $(yt-dlp -g https://www.youtube.com/@NET25TV/live)
         EOL
 
     - name: Get Y-PTVPhilippines.m3u8
@@ -54,7 +54,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/@PTVPhilippines/live)
+        $(yt-dlp -g https://www.youtube.com/@PTVPhilippines/live)
         EOL
 
     - name: Get Y-TeleRadyo.m3u8
@@ -64,7 +64,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/@TeleRadyo/live)
+        $(yt-dlp -g https://www.youtube.com/@TeleRadyo/live)
         EOL
 
     - name: Get Y-TeleRadyo.m3u8
@@ -74,7 +74,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/@abscbnnews/live)
+        $(yt-dlp -g https://www.youtube.com/@abscbnnews/live)
         EOL
 
     - name: Get Y-UNTVNewsandRescue.m3u8
@@ -84,7 +84,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(youtube-dl -g https://www.youtube.com/@UNTVNewsandRescue/live)
+        $(yt-dlp -g https://www.youtube.com/@UNTVNewsandRescue/live)
         EOL
 
     - name: Get Y-abscbnentertainment.m3u8
@@ -96,7 +96,6 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp -g --no-live-from-start https://www.youtube.com/channel/UCstEtN0pgOmCf02EdXsGChw/live)
         EOL
-
 
 
 
