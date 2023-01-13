@@ -24,7 +24,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:BANDWIDTH=1657868,RESOLUTION=1920x1080,CODECS="avc1.640029,mp4a.40.2"
-        $(yt-dlp -g -f all https://github.com/kubbar/youtube_and_dailymotion/raw/main/Y-abscbnentertainment.m3u8)
+        $(yt-dlp -g --list-extractors https://github.com/kubbar/youtube_and_dailymotion/raw/main/Y-abscbnentertainment.m3u8)
         EOL
 
 
