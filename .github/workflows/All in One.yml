@@ -24,7 +24,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --flat-playlist https://github.com/kubbar/youtube_and_dailymotion/raw/main/Y-abscbnentertainment.m3u8)
+        $(yt-dlp -g --live-from-start https://github.com/kubbar/youtube_and_dailymotion/raw/main/Y-abscbnentertainment.m3u8)
         EOL
 
 
