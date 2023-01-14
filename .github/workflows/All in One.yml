@@ -87,6 +87,16 @@ jobs:
         $(yt-dlp -g https://www.youtube.com/@UNTVNewsandRescue/live)
         EOL
 
+    - name: Get Y-marinai.m3u8
+      run: |
+        touch ./Y-marinai.m3u8
+        sudo cat >./Y-marinai.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/marinai/live)
+        EOL
+        
     - name: Get Y-abscbnentertainment.m3u8
       run: |
         touch ./Y-abscbnentertainment.m3u8
