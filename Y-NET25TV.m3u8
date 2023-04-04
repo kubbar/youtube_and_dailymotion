@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5420722
-https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1680639175/ei/ZzAsZKyOJYXsuwLfz4LQBw/ip/40.77.92.171/id/T4PFsmbaf0Q.1/itag/95/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D136/hls_chunk_host/rr4---sn-q4fl6nz6.googlevideo.com/vprv/1/playlist_type/LIVE/initcwndbps/4955000/mh/HZ/mm/44/mn/sn-q4fl6nz6/ms/lva/mv/m/mvi/4/pl/17/dover/11/pacing/0/keepalive/yes/fexp/24007246/mt/1680617344/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,vprv,playlist_type/sig/AOq0QJ8wRAIgTHVy_aclLvCFz2DapTgjCLwPF9rlkBv6J0e2_UjVCs4CIG8xkmEQIbfGQLbtXMRX0FbVYx7KiH5kMPcwM16wgBKh/lsparams/hls_chunk_host,initcwndbps,mh,mm,mn,ms,mv,mvi,pl/lsig/AG3C_xAwRAIgdSpc0UtB4BinGmHJqEh7qN3MBK-eHZsxEKJW7fLiOgUCIBYRB3BJ4-cN3ks2zhRUzObBmTbXz6_pRZ8A0bK8Hx55/playlist/index.m3u8
+https://raw.githubusercontent.com/kubbar/youtube_and_dailymotion/main/notwork/notwork.m3u8
