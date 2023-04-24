@@ -104,7 +104,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/@PlayMedia10/live)
+        $(yt-dlp -g https://www.media.gov.kw/LiveTV.aspx?PanChannel=KTV1)
         EOL
 
     - name: Get Y-abscbnentertainment.m3u8
