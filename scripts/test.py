@@ -1,22 +1,12 @@
-from flask import Flask, request, jsonify
+import json
 
-app = Flask(__name__)
+# الكود JSON
+data = 'http://ptc-play.com/portal.php?type=itv&action=create_link&cmd=ffmpeg%20http://localhost/ch/444017_&series=&forced_storage=0&disable_ad=0&download=0&force_ch_link_check=0&JsHttpRequest=1-xml&mac=00:1a:79:00:43:B8'
 
-# قم بتخزين رابط الفيديو في المتغير التالي
-video_url = "http://ptc-play.com:80/play/live.php?mac=00:1a:79:00:43:B8&stream=444017&extension=ts"
+# تحليل الكود JSON
+parsed_data = json.loads(data)
 
-# يمكنك تخزين الرمز المميز في المتغير التالي
-token = "57BEFAB1CF9D38C02540482977602D10"
+# استخراج الرابط من المفتاح "cmd"
+url = parsed_data["js"]["cmd"].split(" ")[1]
 
-@app.route('/play_video', methods=['GET'])
-def play_video():
-    # التحقق من صحة الرمز المرفق في الطلب
-    received_token = request.args.get('token')
-
-    if received_token == token:
-        return f" <video controls autoplay><source src='{video_url}'></video>"
-  
-    return "Invalid token"
-
-if __name__ == '__main__':
-    app.run()
+print(url)
