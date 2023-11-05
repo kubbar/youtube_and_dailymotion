@@ -117,25 +117,97 @@ jobs:
         $(yt-dlp -g --no-live-from-start https://www.youtube.com/channel/UCstEtN0pgOmCf02EdXsGChw/live)
         EOL
         
-    - name: Get twitch.m3u8
+    - name: Get KUWAIT-1.m3u8
       run: |
-        touch ./twitch.m3u8
-        sudo cat >./twitch.m3u8 <<EOL
+        touch ./KUWAIT-1.m3u8
+        sudo cat >./KUWAIT-1.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start http://azrotv.com/iphone/arabic/ch2/Kuwait1.php)
+        $(yt-dlp -g --no-live-from-start http://azrotv.com/m3u8/kuwaittv/?id=kwtv1)
         EOL
 
-    - name: Get twitch1.m3u8
+    - name: Get KUWAIT-2.m3u8
       run: |
-        touch ./twitch1.m3u8
-        sudo cat >./twitch1.m3u8 <<EOL
+        touch ./KUWAIT-2.m3u8
+        sudo cat >./KUWAIT-2.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://azrotv.com/m3u8/kuwaittv/?id=kwtv1)
+        $(yt-dlp -g --no-live-from-start http://azrotv.com/m3u8/kuwaittv/?id=kwtv2)
         EOL
+
+    - name: Get KTV-AlMajlis.m3u8
+      run: |
+        touch ./KTV-AlMajlis.m3u8
+        sudo cat >./KTV-AlMajlis.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g --no-live-from-start https://azrotv.com/m3u8/kuwaittv/?id=kwtvmajlis)
+        EOL
+
+    - name: Get KTV-Drama.m3u8
+      run: |
+        touch ./KTV-Drama.m3u8
+        sudo cat >./KTV-Drama.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g --no-live-from-start https://azrotv.com/m3u8/kuwaittv/?id=kwtvkids)
+        EOL
+
+    - name: Get KTV-AlQurain.m3u8
+      run: |
+        touch ./KTV-AlQurain.m3u8
+        sudo cat >./KTV-AlQurain.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g --no-live-from-start https://azrotv.com/m3u8/kuwaittv/?id=kwtvqurain)
+        EOL
+
+    - name: Get KTV-Arabe.m3u8
+      run: |
+        touch ./KTV-Arabe.m3u8
+        sudo cat >./KTV-Arabe.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g --no-live-from-start https://azrotv.com/m3u8/kuwaittv/?id=kwtvarabi)
+        EOL
+
+    - name: Get KTV-Sport.m3u8
+      run: |
+        touch ./KTV-Sport.m3u8
+        sudo cat >./KTV-Sport.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g --no-live-from-start https://azrotv.com/m3u8/kuwaittv/?id=kwtvsports)
+        EOL
+
+    - name: Get KTV-Sport-Plus.m3u8
+      run: |
+        touch ./KTV-Sport-Plus.m3u8
+        sudo cat >./KTV-Sport-Plus.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g --no-live-from-start https://azrotv.com/m3u8/kuwaittv/?id=kwtvsportsplus)
+        EOL
+
+    - name: Get KTV-Ethraa.m3u8
+      run: |
+        touch ./KTV-Ethraa.m3u8
+        sudo cat >./KTV-Ethraa.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g --no-live-from-start https://azrotv.com/m3u8/kuwaittv/?id=kwtvethraa)
+        EOL
+
+        
 
 
 
