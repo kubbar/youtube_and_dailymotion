@@ -12,8 +12,8 @@ jobs:
 
     - name: Delete file
       run: |
-        git config user.email "you@example.com"
-        git config user.name "Your Name"
+        git config user.email "kubbarr@hotmail.com"
+        git config user.name "kubbar"
         git rm path/to/your/file.txt
         git commit -m "Delete file.txt"
         git push
