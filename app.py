@@ -1,28 +1,26 @@
 import requests
-import sys
+import re
 
-# قراءة الرابط من ملف نصي
-with open('app_info.txt', 'r') as file:
-    config_url = file.read().strip()  # يحذف المسافات البيضاء والأسطر الجديدة
+# استبدل هذا بمسار ملف app_info.txt الخاص بك
+config_url_path = 'app_info.txt'
 
-try:
-    # جلب بيانات التكوين من Vimeo
-    response = requests.get(config_url)
-    response.raise_for_status()  # سيقوم بإثارة خطأ إذا كان الطلب ليس 200
-    config_data = response.json()
+with open(config_url_path, 'r') as file:
+    config_url = file.read().strip()
 
-    # استخراج رابط m3u8
-    m3u8_url = config_data['request']['files']['hls']['cdns']['fastly_live']['url']
+response = requests.get(config_url)
+response.raise_for_status()
+config_data = response.json()
 
-    # جلب محتوى m3u8
-    m3u8_response = requests.get(m3u8_url)
-    m3u8_response.raise_for_status()
+# استخرج الـ URL الأساسي من الرابط الذي يحتوي على ملف `.m3u8`
+m3u8_url = config_data['request']['files']['hls']['cdns']['fastly_live']['url']
+base_url = re.match(r'https?://[^/]+/', m3u8_url).group(0)
 
-    # كتابة محتوى m3u8 إلى ملف جديد
-    with open('app.m3u8', 'w') as m3u8_file:
-        m3u8_file.write(m3u8_response.text)
+m3u8_response = requests.get(m3u8_url)
+m3u8_response.raise_for_status()
+m3u8_content = m3u8_response.text
 
-except requests.HTTPError as e:
-    print(f'HTTP error: {e}', file=sys.stderr)
-except Exception as e:
-    print(f'An error occurred: {e}', file=sys.stderr)
+# استبدل جميع المسارات النسبية بمسارات مطلقة باستخدام الـ base_url
+updated_m3u8_content = re.sub(r'chunklist_b(\d+).m3u8', base_url + r'chunklist_b\1.m3u8', m3u8_content)
+
+with open('app.m3u8', 'w') as m3u8_file:
+    m3u8_file.write(updated_m3u8_content)
