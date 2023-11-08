@@ -23,8 +23,8 @@ jobs:
 
     - name: Commit and push if changed
       run: |
-        git config --global user.email "kubbarr@hotmail.com"
-        git config --global user.name "kubbar"
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
         git add -f app.m3u8
         git commit -m "Automated m3u8 update"
         git push
