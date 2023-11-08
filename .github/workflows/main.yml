@@ -1,49 +1,30 @@
-name: Generate M3U8 and Commit
+from urllib.parse import urlparse, urlunparse
+import requests
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+# استبدل هذا بمسار ملف app_info.txt الخاص بك
+config_url_path = 'app_info.txt'
 
-jobs:
-  build-and-generate-m3u8:
-    runs-on: ubuntu-latest
+with open(config_url_path, 'r') as file:
+    config_url = file.read().strip()
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+response = requests.get(config_url)
+response.raise_for_status()
+config_data = response.json()
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+# استخرج الـ URL الأساسي لـ m3u8
+m3u8_url = config_data['request']['files']['hls']['cdns']['fastly_live']['url']
+parsed_url = urlparse(m3u8_url)
 
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests
+# أزل الجزء الأخير من الـ path (filename) للحصول على الـ base URL
+base_path = '/'.join(parsed_url.path.split('/')[:-1]) + '/'
+base_url = urlunparse(parsed_url._replace(path=base_path))
 
-    - name: Run script to generate M3U8
-      run: |
-        chmod +x ./app.sh
-        ./app.sh
+m3u8_response = requests.get(m3u8_url)
+m3u8_response.raise_for_status()
+m3u8_content = m3u8_response.text
 
-    - name: Check if app.m3u8 was created
-      run: |
-        if [ -f app.m3u8 ]; then
-          echo "app.m3u8 exists."
-        else
-          echo "app.m3u8 does not exist."
-          exit 1
-        fi
+# إضافة الـ base URL إلى كل chunklist في المحتوى
+m3u8_content = m3u8_content.replace('chunklist', base_url + 'chunklist')
 
-    - name: Commit and push if changed
-      run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
-        git add app.m3u8
-        git diff --staged --quiet || git commit -m "Automated m3u8 update"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+with open('app.m3u8', 'w') as m3u8_file:
+    m3u8_file.write(m3u8_content)
