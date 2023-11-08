@@ -1,24 +1,33 @@
-name: Generate M3U8
+name: Generate M3U8 and Commit
 
-# يحدد الأحداث التي تتسبب في تشغيل العمليات
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push]
 
-# الوظائف التي ستنفذ
 jobs:
-  build-and-generate-m3u8:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    # الخطوة الأولى: الدخول إلى المستودع
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+      with:
+        ref: main  # Or the branch you want to push to
 
-    # الخطوة الثانية: تشغيل السكريبت باستخدام Bash
-    - name: Run script to generate M3U8
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Generate M3U8
       run: |
         chmod +x ./app.sh
         ./app.sh
+
+    - name: Commit and push if changed
+      run: |
+        git config --global user.email "kubbarr@hotmail.com"
+        git config --global user.name "kubbar"
+        git add -f app.m3u8
+        git commit -m "Automated m3u8 update"
+        git push
+      env:
+        # This token is provided by Actions, you do not need to create your own token
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
