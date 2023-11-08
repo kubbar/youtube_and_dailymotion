@@ -1,30 +1,30 @@
-from urllib.parse import urlparse, urlunparse
+from flask import Flask, Response
 import requests
 
-# استبدل هذا بمسار ملف app_info.txt الخاص بك
-config_url_path = 'app_info.txt'
+app = Flask(__name__)
 
-with open(config_url_path, 'r') as file:
-    config_url = file.read().strip()
+@app.route('/generate_m3u8')
+def generate_m3u8():
+    # الرابط الذي يحتوي على بيانات التكوين
+    config_url = 'https://player.vimeo.com/video/881909784/config?h=0c1725d19a'
 
-response = requests.get(config_url)
-response.raise_for_status()
-config_data = response.json()
+    try:
+        # جلب بيانات التكوين من Vimeo
+        config_response = requests.get(config_url)
+        config_response.raise_for_status()
+        config_data = config_response.json()
 
-# استخرج الـ URL الأساسي لـ m3u8
-m3u8_url = config_data['request']['files']['hls']['cdns']['fastly_live']['url']
-parsed_url = urlparse(m3u8_url)
+        # استخراج الرابط الذي يحتوي على ملف .m3u8
+        m3u8_url = config_data['request']['files']['hls']['cdns']['fastly_live']['url']
 
-# أزل الجزء الأخير من الـ path (filename) للحصول على الـ base URL
-base_path = '/'.join(parsed_url.path.split('/')[:-1]) + '/'
-base_url = urlunparse(parsed_url._replace(path=base_path))
+        # جلب محتوى m3u8
+        m3u8_response = requests.get(m3u8_url)
+        m3u8_response.raise_for_status()
 
-m3u8_response = requests.get(m3u8_url)
-m3u8_response.raise_for_status()
-m3u8_content = m3u8_response.text
+        # إرجاع محتوى m3u8 كاستجابة
+        return Response(m3u8_response.text, mimetype='application/vnd.apple.mpegurl')
+    except requests.RequestException as e:
+        return Response(f"An error occurred: {e}", status=500)
 
-# إضافة الـ base URL إلى كل chunklist في المحتوى
-m3u8_content = m3u8_content.replace('chunklist', base_url + 'chunklist')
-
-with open('app.m3u8', 'w') as m3u8_file:
-    m3u8_file.write(m3u8_content)
+if __name__ == '__main__':
+    app.run(debug=True)
