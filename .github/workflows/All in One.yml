@@ -214,7 +214,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://player.octivid.com/v1/live?id=MTEy&channelid=NjE=&countries=QUQsQUUsQUYsQUcsQUksQUwsQU0sQU8sQVEsQVIsQVMsQVQsQVUsQVcsQVgsQVosQkEsQkIsQkQsQkUsQkYsQkcsQkgsQkksQkosQkwsQk0sQk4sQk8sQlEsQlIsQlMsQlQsQlYsQlcsQlksQlosQ0EsQ0MsQ0QsQ0YsQ0csQ0gsQ0ksQ0ssQ0wsQ00sQ04sQ08sQ1IsQ1UsQ1YsQ1csQ1gsQ1ksQ1osREUsREosREssRE0sRE8sRFosRUMsRUUsRUcsRUgsRVIsRVMsRVQsRkksRkosRkssRk0sRk8sRlIsR0EsR0IsR0QsR0UsR0YsR0csR0gsR0ksR0wsR00sR04sR1AsR1EsR1IsR1MsR1QsR1UsR1csR1ksSEssSE0sSE4sSFIsSFQsSFUsSUQsSUUsSUwsSU0sSU4sSU8sSVEsSVIsSVMsSVQsSkUsSk0sSk8sSlAsS0UsS0csS0gsS0ksS00sS04sS1AsS1IsS1csS1ksS1osTEEsTEIsTEMsTEksTEssTFIsTFMsTFQsTFUsTFYsTFksTUEsTUMsTUQsTUUsTUYsTUcsTUgsTUssTUwsTU0sTU4sTU8sTVAsTVEsTVIsTVMsTVQsTVUsTVYsTVcsTVgsTVksTVosTkEsTkMsTkUsTkYsTkcsTkksTkwsTk8sTlAsTlIsTlUsTlosT00sUEEsUEUsUEYsUEcsUEgsUEssUEwsUE0sUE4sUFIsUFMsUFQsUFcsUFksUUEsUkUsUk8sUlMsUlUsUlcsU0EsU0IsU0MsU0QsU0UsU0csU0gsU0ksU0osU0ssU0wsU00sU04sU08sU1IsU1MsU1QsU1YsU1gsU1ksU1osVEMsVEQsVEYsVEcsVEgsVEosVEssVEwsVE0sVE4sVE8sVFIsVFQsVFYsVFcsVFosVUEsVUcsVU0sVVMsVVksVVosVkEsVkMsVkUsVkcsVkksVk4sVlUsV0YsV1MsWEssWUUsWVQsWkEsWk0sWlc=&w=100%25&h=100%25&autoplay=true&force_mute=yes&filter=ALLOW&signature=c6fa29704c54caae69451a1e3ae3a15b)
+        $(yt-dlp -g --no-live-from-start http://statrescdn.octivid.com/analytics/uploads/112/61df05599f.png)
         EOL
         
 
