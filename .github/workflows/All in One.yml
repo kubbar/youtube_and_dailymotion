@@ -214,7 +214,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://live.hibridmedia.com/streams/embedwebview/kwmedia-kwtv1)
+        $(yt-dlp -g --no-live-from-start https://www.alraimedia.com/live)
         EOL
         
 
