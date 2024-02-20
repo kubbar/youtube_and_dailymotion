@@ -214,7 +214,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start http://azrotv.com/iphone/arabic/ch2/Kuwait1.php)
+        $(yt-dlp -g --no-live-from-start https://www.media.gov.kw/LiveTV.aspx?PanChannel=KTV1)
         EOL
         
 
