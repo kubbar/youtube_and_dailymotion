@@ -124,7 +124,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start http://azrotv.com/m3u8/kuwaittv/?id=kwtv1)
+        $(yt-dlp -g --no-live-from-start https://dagav.yoo7.com/h24-page/playlist.m3u8)
         EOL
 
     - name: Get KUWAIT-2.m3u8
