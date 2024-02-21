@@ -124,7 +124,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://kwtktv1ta.cdn.mangomolo.com/ktv1/smil:ktv1.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8)
+        $(yt-dlp -g --no-live-from-start https://kwtktv1ta.cdn.mangomolo.com/ktv1/smil:ktv1.stream.smil/chunklist_b8000000_t64MzYwcA=.m3u8)
         EOL
 
     - name: Get KUWAIT-2.m3u8
@@ -134,7 +134,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist_b3500000_t64MTA4MHA=.m3u8)
+        $(yt-dlp -g --no-live-from-start https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist_b3500000_t64MzYwcA=.m3u8)
         EOL
 
     - name: Get KTV-AlMajlis.m3u8
@@ -144,7 +144,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://kwtalmta.cdn.mangomolo.com/alm/smil:alm.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8)
+        $(yt-dlp -g --no-live-from-start https://kwtalmta.cdn.mangomolo.com/alm/smil:alm.stream.smil/chunklist_b8000000_t64MzYwcA=.m3u8)
         EOL
 
     - name: Get KTV-Drama.m3u8
@@ -154,7 +154,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://kwtkbta.cdn.mangomolo.com/kb/smil:kb.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8)
+        $(yt-dlp -g --no-live-from-start https://kwtkbta.cdn.mangomolo.com/kb/smil:kb.stream.smil/chunklist_b8000000_t64MzYwcA=.m3u8)
         EOL
 
     - name: Get KTV-AlQurain.m3u8
@@ -164,7 +164,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://kwtktvaqta.cdn.mangomolo.com/ktvaq/smil:ktvaq.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8)
+        $(yt-dlp -g --no-live-from-start https://kwtktvaqta.cdn.mangomolo.com/ktvaq/smil:ktvaq.stream.smil/chunklist_b8000000_t64MzYwcA=.m3u8)
         EOL
 
     - name: Get KTV-Arabe.m3u8
@@ -174,7 +174,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://kwtktvata.cdn.mangomolo.com/ktva/smil:ktva.stream.smil/chunklist_b3500000_t64MTA4MHA=.m3u8)
+        $(yt-dlp -g --no-live-from-start https://kwtktvata.cdn.mangomolo.com/ktva/smil:ktva.stream.smil/chunklist_b3500000_t64MzYwcA=.m3u8)
         EOL
 
     - name: Get KTV-Sport.m3u8
@@ -184,7 +184,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8)
+        $(yt-dlp -g --no-live-from-start https://kwtspta.cdn.mangomolo.com/sp/smil:sp.stream.smil/chunklist_b8000000_t64MzYwcA=.m3u8)
         EOL
 
     - name: Get KTV-Sport-Plus.m3u8
@@ -194,7 +194,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8)
+        $(yt-dlp -g --no-live-from-start https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist_b8000000_t64MzYwcA=.m3u8)
         EOL
 
     - name: Get KTV-Ethraa.m3u8
@@ -204,7 +204,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://kwtethta.cdn.mangomolo.com/eth/smil:eth.stream.smil/chunklist_b3500000_t64MTA4MHA=.m3u8)
+        $(yt-dlp -g --no-live-from-start https://kwtethta.cdn.mangomolo.com/eth/smil:eth.stream.smil/chunklist_b3500000_t64MzYwcA=.m3u8)
         EOL
 
     - name: Get test.m3u8
