@@ -1,17 +1,3 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5420722
-http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-  <head>
-    <title>403 Missing stime</title>
-  </head>
-  <body>
-    <h1>Error 403 Missing stime</h1>
-    <p>Missing stime</p>
-    <h3>Error 54113</h3>
-    <p>Details: cache-pao-kpao1770075-PAO 1711599239 879716556</p>
-    <hr>
-    <p>Varnish cache server</p>
-  </body>
-</html>
