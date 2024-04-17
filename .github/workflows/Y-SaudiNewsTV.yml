@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Y-Thikrayat-TV
+name: Y-SaudiNewsTV
 
 # Controls when the workflow will run
 on:
@@ -32,10 +32,10 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x Y-Thikrayat-TV.sh
-          ./Y-Thikrayat-TV.sh
+          chmod +x Y-SaudiNewsTV.sh
+          ./Y-SaudiNewsTV.sh
           #cd scripts
-          #python3 Y-Thikrayat-TV.py > ../Y-Thikrayat-TV.m3u8
+          #python3 Y-SaudiNewsTV.py > ../Y-SaudiNewsTV.m3u8
           echo "m3u grabbed"
         
       - name: git add
