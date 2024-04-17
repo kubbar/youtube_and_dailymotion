@@ -268,7 +268,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://www.web24iptv.online/rotana/rotanaklasik.html)
+        $(yt-dlp -g --no-live-from-start https://old.rotana.net/live-classic)
         EOL
         
 
