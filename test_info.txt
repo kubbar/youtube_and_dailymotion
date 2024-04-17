@@ -1,1 +1,1 @@
-http://azrotv.com/m3u8/ro/?id=classic
+https://azrotv.com/m3u8/ro/?id=classic
