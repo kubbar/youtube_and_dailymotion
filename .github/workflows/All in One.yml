@@ -268,7 +268,9 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start http://azrotv.com/m3u8/ro/?id=classic)
+        $(yt-dlp -g --no-live-from-start https://azrotv.com/m3u8/ro/?id=classic)
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g --no-live-from-start https://azrotv.com/iphone/f/egy-Rclsq)
         EOL
         
 
