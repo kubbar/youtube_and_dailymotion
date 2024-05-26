@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=1769540,RESOLUTION=1920x1080,CODECS="avc1.42c01f,mp4a.40.2",CLOSED-CAPTIONS=NONE
-http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_source/hdntl=exp=1716768518~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=33dac6095e7cc203d8cf14d3511f776c8e04ea7177f745981e37e9d2811815f3/chunks.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1299128,RESOLUTION=854x480,CODECS="avc1.77.30,mp4a.40.2",CLOSED-CAPTIONS=NONE
-http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_480p/hdntl=exp=1716768518~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=33dac6095e7cc203d8cf14d3511f776c8e04ea7177f745981e37e9d2811815f3/chunks.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=642069,RESOLUTION=426x240,CODECS="avc1.42c015,mp4a.40.2",CLOSED-CAPTIONS=NONE
-http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_240p/hdntl=exp=1716768518~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=33dac6095e7cc203d8cf14d3511f776c8e04ea7177f745981e37e9d2811815f3/chunks.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=324719,RESOLUTION=426x240
+http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_240p/hdntl=exp=1716768825~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=f3cca7c9a6fb2189e8523ce10c88bfa51565bc40ee38fd7e41c1fa386ab1f3b6/chunks.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1500000,RESOLUTION=854x480
+http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_480p/hdntl=exp=1716768825~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=f3cca7c9a6fb2189e8523ce10c88bfa51565bc40ee38fd7e41c1fa386ab1f3b6/chunks.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=5000000,RESOLUTION=1920x1080
+http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_source/hdntl=exp=1716768825~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=f3cca7c9a6fb2189e8523ce10c88bfa51565bc40ee38fd7e41c1fa386ab1f3b6/chunks.m3u8
