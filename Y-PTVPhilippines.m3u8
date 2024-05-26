@@ -1,8 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=324719,RESOLUTION=426x240
-http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_240p/hdntl=exp=1716768825~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=f3cca7c9a6fb2189e8523ce10c88bfa51565bc40ee38fd7e41c1fa386ab1f3b6/chunks.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1500000,RESOLUTION=854x480
-http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_480p/hdntl=exp=1716768825~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=f3cca7c9a6fb2189e8523ce10c88bfa51565bc40ee38fd7e41c1fa386ab1f3b6/chunks.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=5000000,RESOLUTION=1920x1080
-http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_source/hdntl=exp=1716768825~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=f3cca7c9a6fb2189e8523ce10c88bfa51565bc40ee38fd7e41c1fa386ab1f3b6/chunks.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5420722
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1716706250/ei/aodSZs20LJrRlu8P8YargAo/ip/172.183.154.97/id/Tzkt5dUgbXg.2/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hdlc/1/hls_chunk_host/rr4---sn-vgqsrnzr.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/spc/UWF9f5Z58wzCZaqxJq_Q4U_fB52V9YPZldJRrPG6bmn09xPSzTUtZH5RflHjSY4/vprv/1/playlist_type/DVR/mh/1V/mm/44/mn/sn-vgqsrnzr/ms/lva/mv/u/mvi/4/pl/17/dover/11/pacing/0/keepalive/yes/mt/1716683994/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,hdlc,xpc,playlist_duration,manifest_duration,spc,vprv,playlist_type/sig/AJfQdSswRAIgL-2BlvFt2UPVjskgLQESah4fQla5D1b1gLypB7r2p48CIEppnGTrHzhRNGdFJ0G7fJh2KH5AVaN7JwlNHunXsOw6/lsparams/hls_chunk_host,mh,mm,mn,ms,mv,mvi,pl/lsig/AHWaYeowRQIhAKATJuJDqAzlX1drZGHo9gT0_hGezDbDJDGnpzoF2qm8AiAbFa-DHw78z6e1m2zLxB-IHsN50Yl0ppKBa5xmOz8mOg%3D%3D/playlist/index.m3u8
