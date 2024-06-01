@@ -1,0 +1,10 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=250000,NAME="240p",RESOLUTION=426x240
+https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist_b250000_t64MjQwcA==.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=550000,NAME="360p",RESOLUTION=640x360
+https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist_b550000_t64MzYwcA==.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1500000,NAME="720p",RESOLUTION=1280x720
+https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist_b1500000_t64NzIwcA==.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3500000,NAME="1080p",RESOLUTION=1920x1080
+https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist_b3500000_t64MTA4MHA=.m3u8

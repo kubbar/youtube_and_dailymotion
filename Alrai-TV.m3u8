@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+http://ltvl.vercel.app/alraimedia/chunk/proxy/https://live.kwikmotion.com/alraimedialive/alraitv.smil/alraitvpublish/alraitv_source/hdntl=exp=1717323427~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=f129d55183ec263a523680aa08035287ffc18ed6e320e7c17ce8f1aa9d8e4adc/chunks.m3u8
