@@ -17,16 +17,6 @@ jobs:
 
 
 
-    - name: Get D-PTVPhilippines.m3u8
-      run: |
-        touch ./D-PTVPhilippines.m3u8
-        sudo cat >./D-PTVPhilippines.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.dailymotion.com/video/x5cr6b9)
-        EOL
-
     - name: Get Y-DZRHNewsTelevision.m3u8
       run: |
         touch ./Y-DZRHNewsTelevision.m3u8
@@ -64,10 +54,10 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/@TeleRadyo/live)
+        $(yt-dlp -g https://www.youtube.com/@TeleradyoSerbisyo/live)
         EOL
 
-    - name: Get Y-TeleRadyo.m3u8
+    - name: Get Y-abscbnnews.m3u8
       run: |
         touch ./Y-abscbnnews.m3u8
         sudo cat >./Y-abscbnnews.m3u8 <<EOL
@@ -75,6 +65,16 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp -g https://www.youtube.com/@abscbnnews/live)
+        EOL
+
+    - name: Get Y-NEWS-TV5.m3u8
+      run: |
+        touch ./Y-NEWS-TV5.m3u8
+        sudo cat >./Y-NEWS-TV5.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp -g https://www.youtube.com/channel/UCGEbMwiX774cseKvJqF9R2g/live)
         EOL
 
     - name: Get Y-UNTVNewsandRescue.m3u8
@@ -96,27 +96,7 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp -g https://www.youtube.com/marinai/live)
         EOL
-
-    - name: Get Y-PlayMedia10.m3u8
-      run: |
-        touch ./Y-PlayMedia10.m3u8
-        sudo cat >./Y-PlayMedia10.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g https://www.youtube.com/@PlayMedia10/live)
-        EOL
-
-    - name: Get Y-abscbnentertainment.m3u8
-      run: |
-        touch ./Y-abscbnentertainment.m3u8
-        sudo cat >./Y-abscbnentertainment.m3u8 <<EOL
-        #EXTM3U
-        #EXT-X-VERSION:3
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://www.youtube.com/channel/UCstEtN0pgOmCf02EdXsGChw/live)
-        EOL
-        
+      
     - name: Get KUWAIT-1.m3u8
       run: |
         touch ./KUWAIT-1.m3u8
