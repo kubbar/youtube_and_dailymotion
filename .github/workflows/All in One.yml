@@ -251,7 +251,15 @@ jobs:
         $(yt-dlp -g --no-live-from-start https://ltvl.vercel.app/alraimedia/livestream)
         EOL
         
-
+    - name: Get Alrai-TV.m3u8
+      run: |
+        touch ./Alrai-TV.m3u8
+        sudo cat >./Alrai-TV.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:BANDWIDTH=2922155,CODECS="mp4a.40.2,avc1.4d4020",RESOLUTION=1280x720,FRAME-RATE=60,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+        $(yt-dlp -g --no-live-from-start https://7t2.000.pe/youtube/channel-id/?id=UCZbpK_Lgctew3YNELlG2ecw)
+        EOL
 
 
 
