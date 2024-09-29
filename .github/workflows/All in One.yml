@@ -114,7 +114,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp -g --no-live-from-start https://7t2.000.pe/youtube/?id=UCZbpK_Lgctew3YNELlG2ecw)
+        $(yt-dlp -g --no-live-from-start https://7t2.000.pe/youtube/channel-id/?id=UCZbpK_Lgctew3YNELlG2ecw)
         EOL
 
 
